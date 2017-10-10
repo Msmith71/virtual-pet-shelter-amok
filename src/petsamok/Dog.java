@@ -25,7 +25,7 @@ public class Dog extends Organic implements OrganicPet, DogPet{
 	@Override
 	public void walk() {
 		mood += 30;
-		health += 5;
+		cageMess -= 20;
 		hunger -= 5;
 		thirst -= 5;
 	}

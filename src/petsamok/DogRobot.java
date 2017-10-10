@@ -16,7 +16,6 @@ public class DogRobot extends Robot implements RobotPet, DogPet{
 	@Override
 	public void walk() {
 		mood += 30;
-		health += 5;
 	}
 
 	@Override

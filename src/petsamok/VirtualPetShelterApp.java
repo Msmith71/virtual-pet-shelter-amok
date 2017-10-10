@@ -81,17 +81,16 @@ public class VirtualPetShelterApp {
 		boolean end = false;
 		
 		System.out.println("\nWelcome to the Pet Emporium: Shelter and Care Centre! Thank you helping out today!");
-		
-
+		int day = 0;
 		
 		do {
 			
 			// Weekly payment for working
-			  int day = 0;
-			  day ++;
-			  if (day % 7 == 0) {
-				  balance += 600;
-			  }
+			day ++;
+			 if (day %7 ==0){
+				 balance += 600;
+			 }
+			
 
 			//low supplies warnings
 			if (petOilCrude <= 5) {
@@ -144,7 +143,7 @@ public class VirtualPetShelterApp {
 //			// robot natural death *work on later
 //			for (VirtualPet pet : shelter.pets()) {
 //				if (pet instanceof RobotPet) {
-//					if (((RobotPet) pet).getPowerLevel() <= 0) {
+//					if (((RobotPet) pet).getPowerLevel() <= 90) {
 //						System.out.println(pet.getName() + "'s power has run out and is being moved for decomissioning.");
 //						String deadPet = pet.getName();
 //						VirtualPet dead = shelter.getPet(deadPet);
